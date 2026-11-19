@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Assets/libaries/fontawesome-free-5.15.4-web/css/all.min.css">
+    <script src=""></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    background: bg-value
+    value can be any color in tailwind css we have many colors
+    gray
+    red 
+    zinc
+    slate
+    purple
+    pink
+    indigo
+    teal
+    navy
+    violet
+    There are two colors that don't accept value
+    black and white
+    position
+    1.inherent
+    2.absolute
+    3.fixed
+    4.relative
+    left-
+    right-
+    top-
+    bottom-
+
+    width and height
+    w-fraction
+    w-3xs 16rem 256px
+    w-2xs 18rem 288px
+    w-xs 20rem
+    w-sm 24rem
+    w-md 28rem
+    w-lg 32rem(large)
+    w-xl 36rem
+    w-2xl 42rem
+    w-3xl 48rem
+    w-4xl 56rem
+    w-5xl 64rem
+    w-6xl 72rem
+    w-7xl 80rem
+    w-20
+    w-auto
+    w-full(100%)
+    w-screen(100vw)
+    w-fit(fitcontent)
+    min-w(min-width)
+    min-h(min-height)
+    h-
+    h-200
+    min-h-1/2
+    min-h-px
+    min-h-full
+    h-screen
+    h-fit
+    h-full
+    h-[255px]
+    bg-[#f123de]
+    w-[55px]
+    display
+    flex
+    grid
+    block
+    inline-block
+    hidden
+         Flex
+    justify-between or evenly or center
+    items-between or evenly or center
+    flex-row or col or row-reverse or col-reverse
+    flex-wrap
+    flex-nowrap
+    flex-wrap-reverse
+    flex-1(it will be growing with the parents)
+    flex-none
+    flex-2
+    grow-
+    shrink-
+    *****Grid*****
+    grid-clos-2 0r 3 or ...
+
+    -->
+ <header class="bg- fixed top-0 left-0 z-10 h-20 w-full flex gap-4 border-b border-b-orange-500 items-center py-4 justify-between">
+      <div class="logo-container px-2">
+        <img src="../Assets/images/IMG-20260924-WA0014.jpg" alt="" class="h-8">
+      </div>
+      <button class="nav-btn text-yellow-500 border border-yellow-500 py-2 px-4 lg:hidden"><i class="fas fa-bars"></i>MENU</button>
+      <nav class="navbar flex gap-10 items-center h-full hidden lg:flex">
+        <!--NAVLINK ONE -->
+        <div class="group relative h-full items-center flex">
+          <button class="cursor-pointer text-white uppercase flex gap-2 text-xs items-center group-hover:text-orange-400">Home <i class="fas fa-chevron-down text-[6px]"></i>
+          </button>
+          <section class="navlinks bg-black text-white text-xs h-fit w- pt-2 flex flex-col gap-4 absolute top-21 -left-full hidden group-hover:flex uppercase">
+            <a href="" class="border-b border-gray-400 px-4 py-2">Home VERSION 1</a>
+             <a href="" class="border-b border-gray-400 px-4 py-2">Home VERSION 2</a>
+              <a href="" class="border-b border-gray-400 px-4 py-2">Home VERSION 3</a>
+               <a href="" class="border-b border-gray-400 px-4 py-2">Home VERSION 4</a>
+          </section>
+        </div>
+        <!-- END OF NAVLINK ONE-->
+         <!--NAVLINK TWO -->
+        <div class="group relative h-full items-center flex">
+          <button class="cursor-pointer text-white uppercase flex gap-2 text-xs items-center group-hover:text-orange-400">ABOUT <i class="fas fa-chevron-down text-[6px]"></i>
+          </button>
+          <section class="navlinks bg-black text-white text-xs h-fit w- pt-2 flex flex-col gap-4 absolute top-21 -left-full hidden group-hover:flex uppercase">
+            <a href="" class="border-b border-gray-400 px-4 py-2">ABOUT</a>
+             <a href="" class="border-b border-gray-400 px-4 py-2">ABOUT PROFILE</a>
+              <a href="" class="border-b border-gray-400 px-4 py-2">ABOUT HISTORY</a>
+               <a href="" class="border-b border-gray-400 px-4 py-2">ABOUT REPORT</a>
+               <a href="" class="border-b border-gray-400 px-4 py-2">ABOUT TEAM</a>
+               <a href="" class="border-b border-gray-400 px-4 py-2">ABOUT SUPPORT</a>
+          </section>
+        </div>
+        <!-- END OF NAVLINK TWO-->
+         <!--NAVLINK THREE -->
+        <div class="group relative h-full items-center flex">
+          <button class="cursor-pointer text-white uppercase flex gap-2 text-xs items-center group-hover:text-orange-400">SERVICE <i class="fas fa-chevron-down text-[6px]"></i>
+          </button>
+          <section class="navlinks bg-black text-white text-xs h-fit w- pt-2 flex flex-col gap-4 absolute top-21 -left-full hidden group-hover:flex uppercase">
+            <a href="" class="border-b border-gray-400 px-4 py-2">SERVICE VERSION 1</a>
+             <a href="" class="border-b border-gray-400 px-4 py-2">SERVICE VERSION 2</a>
+              <a href="" class="border-b border-gray-400 px-4 py-2">SERVICE VERSION 3</a>
+               <a href="" class="border-b border-gray-400 px-4 py-2">SERVICE VERSION 4</a>
+          </section>
+        </div>
+        <!-- END OF NAVLINK THREE-->
+          <!--NAVLINK FOUR -->
+        <div class="group relative h-full items-center flex">
+          <button class="cursor-pointer text-white uppercase flex gap-2 text-xs items-center group-hover:text-orange-400">OTHER PAGES <i class="fas fa-chevron-down text-[6px]"></i>
+          </button>
+          <section class="navlinks bg-black text-white text-xs h-fit w- pt-2 flex flex-col gap-4 absolute top-21 -left-full hidden group-hover:flex uppercase">
+            <a href="" class="border-b border-gray-400 px-4 py-2">404</a>
+          </section>
+        </div>
+        <!-- END OF NAVLINK FOUR-->
+          <!--NAVLINK FIVE -->
+        <div class="group relative h-full items-center flex">
+          <button class="cursor-pointer text-white uppercase flex gap-2 text-xs items-center group-hover:text-orange-400">BLOG <i class="fas fa-chevron-down text-[6px]"></i>
+          </button>
+          <section class="navlinks bg-black text-white text-xs h-fit w- pt-2 flex flex-col gap-4 absolute top-21 -left-full hidden group-hover:flex uppercase">
+            <a href="" class="border-b border-gray-400 px-4 py-2">BLOG VERSION 1</a>
+             <a href="" class="border-b border-gray-400 px-4 py-2">BLOG VERSION 2</a>
+              <a href="" class="border-b border-gray-400 px-4 py-2">SINGLE BLOG</a>
+          </section>
+        </div>
+        <!-- END OF NAVLINK FIVE-->
+          <!--NAVLINK SIX -->
+        <div class="group relative h-full items-center flex">
+          <button class="cursor-pointer text-white uppercase flex gap-2 text-xs items-center group-hover:text-orange-400">CONTACT <i class="fas fa-chevron-down text-[6px]"></i>
+          </button>
+          <section class="navlinks bg-black text-white text-xs h-fit w- pt-2 flex flex-col gap-4 absolute top-21 -left-full hidden group-hover:flex uppercase">
+            <a href="" class="border-b border-gray-400 px-4 py-2">CONTACT VERSION 1</a>
+             <a href="" class="border-b border-gray-400 px-4 py-2">CONTACT VERSION 2</a>
+          </section>
+        </div>
+        <!-- END OF NAVLINK SIX-->
+      </nav>
+       <div class="flex items-center gap-5 px-4 hidden lg:flex">
+        <button class="text-xs text-white"><i class="fas fa-user"></i></button>
+         <button class="text-xs text-white"><i class="fas fa-search"></i></button>
+          <button class="text-xs text-white"><i class="fas fa-box"></i></button>
+           <button class="text-xs text-black bg-white">ENG</button>
+       </div>
+      <nav class="navbar2 hidden bg-black absolute top-20 left-0 w-full h-[200px] overflow-y-auto lg:hidden" >
+        <!-- First Details -->
+        <details class="group broder-b border-b-slate-600  overflow-hidden text-white">
+          <summary class="flex items-center justify-between cursor-pointer py-2 px-5 font-semibold list-none text-white block w-full">
+          <div class="flex items-center justify-between">
+            <span>Home</span>
+            <span class="text-lg group-open:rotate-45 transition-transform duration-500">+</span>
+            <!-- <span class="text-lg">-</span> -->
+          </div>
+          </summary>
+          <div class="px-5 pb-5">
+            <a href="" class="block py-2">Home VERSION 1</a>
+            <a href="" class="block py-2">Home VERSION 2</a>
+            <a href="" class="block py-2">Home VERSION 3</a>
+            <a href="" class="block py-2">Home VERSION 4</a>
+          </div>
+        </details>
+            <!--End of First Details -->
+        <!-- Second Details -->
+        <details class="group broder-b border-b-slate-600  overflow-hidden text-white">
+          <summary class="flex items-center justify-between cursor-pointer py-2 px-5 font-semibold list-none text-white block w-full">
+          <div class="flex items-center justify-between">
+            <span>ABOUT</span>
+            <span class="text-lg group-open:rotate-45 transition-transform duration-500">+</span>
+            <!-- <span class="text-lg">-</span> -->
+          </div>
+          </summary>
+          <div class="px-5 pb-5">
+            <a href="" class="block py-2">ABOUT PROFILE</a>
+            <a href="" class="block py-2">ABOUT HISTORY</a>
+            <a href="" class="block py-2">ABOUT REPORT</a>
+            <a href="" class="block py-2">ABOUT TEAM</a>
+            <a href="" class="block py-2">ABOUT SUPPORT</a>
+          </div>
+        </details>
+            <!--End of Second Details -->
+        <!-- Third Details -->
+        <details class="group broder-b border-b-slate-600  overflow-hidden text-white">
+          <summary class="flex items-center justify-between cursor-pointer py-2 px-5 font-semibold list-none text-white block w-full">
+          <div class="flex items-center justify-between">
+            <span>SERVICE</span>
+            <span class="text-lg group-open:rotate-45 transition-transform duration-500">+</span>
+            <!-- <span class="text-lg">-</span> -->
+          </div>
+          </summary>
+          <div class="px-5 pb-5">
+            <a href="" class="block py-2">SERVICE VERSION 1</a>
+            <a href="" class="block py-2">SERVICE VERSION 2</a>
+            <a href="" class="block py-2">SERVICE VERSION 3</a>
+            <a href="" class="block py-2">SERVICE VERSION 4</a>
+          </div>
+        </details>
+            <!--End of Third Details -->
+        <!-- Fourth Details -->
+        <details class="group broder-b border-b-slate-600  overflow-hidden text-white">
+          <summary class="flex items-center justify-between cursor-pointer py-2 px-5 font-semibold list-none text-white block w-full">
+          <div class="flex items-center justify-between">
+            <span>OTHER PAGES</span>
+            <span class="text-lg group-open:rotate-45 transition-transform duration-500">+</span>
+            <!-- <span class="text-lg">-</span> -->
+          </div>
+          </summary>
+          <div class="px-5 pb-5">
+            <a href="" class="block py-2">404</a>
+          </div>
+        </details>
+            <!--End of Fourth Details -->
+        <!-- Fifth Details -->
+        <details class="group broder-b border-b-slate-600  overflow-hidden text-white">
+          <summary class="flex items-center justify-between cursor-pointer py-2 px-5 font-semibold list-none text-white block w-full">
+          <div class="flex items-center justify-between">
+            <span>BLOG</span>
+            <span class="text-lg group-open:rotate-45 transition-transform duration-500">+</span>
+            <!-- <span class="text-lg">-</span> -->
+          </div>
+          </summary>
+          <div class="px-5 pb-5">
+            <a href="" class="block py-2">BLOG VERSION 1</a>
+            <a href="" class="block py-2">BLOG VERSION 2</a>
+            <a href="" class="block py-2">BLOG VERSION 3</a>
+          </div>
+        </details>
+            <!--End of Fifth Details -->
+        <!-- Sixth Details -->
+        <details class="group broder-b border-b-slate-600  overflow-hidden text-white">
+          <summary class="flex items-center justify-between cursor-pointer py-2 px-5 font-semibold list-none text-white block w-full">
+          <div class="flex items-center justify-between">
+            <span>CONTACT</span>
+            <span class="text-lg group-open:rotate-45 transition-transform duration-500">+</span>
+            <!-- <span class="text-lg">-</span> -->
+          </div>
+          </summary>
+          <div class="px-5 pb-5">
+            <a href="" class="block py-2">CONTACT VERSION 1</a>
+            <a href="" class="block py-2">CONTACT VERSION 2</a>
+          </div>
+        </details>
+            <!--End of Sixth Details -->
+      </nav>
+</header>
+   
